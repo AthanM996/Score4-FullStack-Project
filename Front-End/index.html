@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        
+        <title>Score4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+        <!-- Imports -->
+        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="./style.css">
+	    <script src="bootstrap/jquery-3.2.1.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+	    <script src="./JavascriptForIndex.js"></script>
+  
+    </head>
+    <body>
+        
+          <!--  <div id="scoreboardDiv">
+                <p style='margin:0px;'>Scoreboard</p>
+                <div id="firstplayerDiv" >
+                    <h4>First Player Score</h4>
+                    <label id='fplayerScore' style="color:red;font-size:21px;">0</label>            
+                </div>
+                <div id="secondplayerDiv" >
+                    <h4>First Player Score</h4>
+                    <label id='splayerScore' style="color:red;font-size:21px;">0</label>            
+                </div>
+                
+            </div> -->
+
+            <!--<h1 id="playerturn">Παιζει πρωτος ο κιτρινος!</h1>-->
+            <h1> Score4</h1>
+            <div id="tableDiv">
+                
+            </div>
+
+            <!-- Πληροφοριες για το παιχνιδι-->
+            <div id="gameinfoDiv">
+                <h4 id="playerturn">Εισοδος στο παιχνίδι!</h4>
+            </div>
+
+             <!-- ΤΟ ΜΕΡΟΣ ΠΟΥ ΚΑΝΕΙ LOGIN Ο ΧΡΗΣΤΗΣ-->   
+            <div id='loginDiv'>
+                <input id='username' placeholder="Δωσε username!"> 
+                <select id='pcolor'>
+                <option value='r'>R</option>
+                <option value='y'>Y</option>
+                </select>
+                <button id='login' class='btn btn-primary'>ΕΙΣΟΔΟΣ ΣΤΟ ΠΑΙΧΝΙΔΙ</button><br>
+            </div>
+           
+            <!-- ΤΟ ΜΕΡΟΣ ΠΟΥ ΔΙΝΕΤΑΙ Η ΚΙΝΗΣΗ!-->
+            <div id="moveDiv">
+                
+                    <label>Δωσε στηλη:</label>
+                    <input type="text" id="moveCell" name="moveCellName" placeholder="Απο 0-6">
+                    <input type="submit" class='btn btn-primary' id="move" name="submitName" value="Κανε την κινηση!" >
+                
+                   
+            </div>
+
+            <div id="dbutton"  style="position: absolute;right: 30%;top: 80%;">
+                <button class='btn btn-primary' id='reset'>RESET</button>
+            </div>    
+    </body>
+</html>
